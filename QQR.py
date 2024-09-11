@@ -49,12 +49,12 @@ qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H)
 qr.add_data("https://linktr.ee/curieosity")
 img = qr.make_image(
     image_factory=StyledPilImage,
-    embeded_image_path="./logo.png",
+    embeded_image_path="./logoLinktree.png",
     module_drawer=RoundedModuleDrawer(1),
     color_mask=RadialGradiantColorMask(
         back_color=(255, 255, 255),
         center_color=(0, 0, 0),
-        edge_color=(0, 0, 0),
+        edge_color=(67, 230, 96),
     ),
 )
 img.save("QQRcode_linktree.png")
