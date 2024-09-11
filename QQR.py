@@ -58,3 +58,17 @@ img = qr.make_image(
     ),
 )
 img.save("QQRcode_linktree.png")
+
+qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H)
+qr.add_data("https://docs.google.com/forms/d/1_b-KhY9AAr72oIGTGAzjWcjVtsVd_TRz38VOWIrFGRk/edit?usp=drivesdk")
+img = qr.make_image(
+    image_factory=StyledPilImage,
+    embeded_image_path="./logo.png",
+    module_drawer=RoundedModuleDrawer(1),
+    color_mask=RadialGradiantColorMask(
+        back_color=(255, 255, 255),
+        center_color=(0, 0, 0),
+        edge_color=(0, 0, 0),
+    ),
+)
+img.save("QQRcode_inscription.png")
