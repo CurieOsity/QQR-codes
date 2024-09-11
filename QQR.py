@@ -7,7 +7,7 @@ qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H)
 qr.add_data("https://discord.com/invite/uwAjHAG")
 img = qr.make_image(
     image_factory=StyledPilImage,
-    embeded_image_path="./logoDiscord.png",
+    embeded_image_path="./logo/logoDiscord.png",
     module_drawer=RoundedModuleDrawer(1),
     color_mask=RadialGradiantColorMask(
         back_color=(255, 255, 255),
@@ -15,13 +15,13 @@ img = qr.make_image(
         edge_color=(88, 101, 242),
     ),
 )
-img.save("QQRcode_Discord.png")
+img.save("./out_QR/QQRcode_Discord.png")
 
 qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H)
 qr.add_data("https://www.facebook.com/curieosity.curieosity.3")
 img = qr.make_image(
     image_factory=StyledPilImage,
-    embeded_image_path="./logoFacebook.png",
+    embeded_image_path="./logo/logoFacebook.png",
     module_drawer=RoundedModuleDrawer(1),
     color_mask=RadialGradiantColorMask(
         back_color=(255, 255, 255),
@@ -29,13 +29,13 @@ img = qr.make_image(
         edge_color=(59, 89, 152),
     ),
 )
-img.save("QQRcode_Facebook.png")
+img.save("./out_QR/QQRcode_Facebook.png")
 
 qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H)
 qr.add_data("https://www.instagram.com/curieosity.su/?hl=fr")
 img = qr.make_image(
     image_factory=StyledPilImage,
-    embeded_image_path="./logoInstagram.png",
+    embeded_image_path="./logo/logoInstagram.png",
     module_drawer=RoundedModuleDrawer(1),
     color_mask=RadialGradiantColorMask(
         back_color=(255, 255, 255),
@@ -43,13 +43,13 @@ img = qr.make_image(
         edge_color=(178, 49, 185),
     ),
 )
-img.save("QQRcode_Instagram.png")
+img.save("./out_QR/QQRcode_Instagram.png")
 
 qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H)
 qr.add_data("https://linktr.ee/curieosity")
 img = qr.make_image(
     image_factory=StyledPilImage,
-    embeded_image_path="./logoLinktree.png",
+    embeded_image_path="./logo/logoLinktree.png",
     module_drawer=RoundedModuleDrawer(1),
     color_mask=RadialGradiantColorMask(
         back_color=(255, 255, 255),
@@ -57,13 +57,13 @@ img = qr.make_image(
         edge_color=(67, 230, 96),
     ),
 )
-img.save("QQRcode_linktree.png")
+img.save("./out_QR/QQRcode_linktree.png")
 
 qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H)
 qr.add_data("https://docs.google.com/forms/d/1_b-KhY9AAr72oIGTGAzjWcjVtsVd_TRz38VOWIrFGRk/edit?usp=drivesdk")
 img = qr.make_image(
     image_factory=StyledPilImage,
-    embeded_image_path="./logo.png",
+    embeded_image_path="./logo/logo.png",
     module_drawer=RoundedModuleDrawer(1),
     color_mask=RadialGradiantColorMask(
         back_color=(255, 255, 255),
